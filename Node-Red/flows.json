@@ -1,0 +1,74 @@
+[
+    {
+        "id": "ff05391033a72755",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "caa2a26d2157943b",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d729db47ab3c3d97",
+        "type": "mqtt in",
+        "z": "ff05391033a72755",
+        "name": "",
+        "topic": "testing",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "caa2a26d2157943b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 120,
+        "wires": [
+            [
+                "11566dc5f18a89ed"
+            ]
+        ]
+    },
+    {
+        "id": "11566dc5f18a89ed",
+        "type": "debug",
+        "z": "ff05391033a72755",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 120,
+        "wires": []
+    }
+]
